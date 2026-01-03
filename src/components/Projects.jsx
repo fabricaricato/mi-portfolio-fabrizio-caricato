@@ -3,7 +3,12 @@ const Projects = () => {
     {
       title: "Chat-UI",
       description: "Simple interfaz de un chat funcional entre dos personas.",
-      tech: "HTML, CSS y JavaScript"
+      technologies: "HTML, CSS y JavaScript"
+    },
+    {
+      title: "Carteleria digital \"El Re Pollo" + "\"",
+      description: "Carteleria de precios intuitiva",
+      technologies: "React"
     }
   ];
 
@@ -16,9 +21,9 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <p style={{marginTop: '15px', color: '#27e6ec'}}>
-              <strong>Tecnologías: </strong>{project.tech}
+              <strong>Tecnologías: </strong>{project.technologies}
             </p>
-          </div>
+          </div>        
         ))}
       </div>
     </section>
