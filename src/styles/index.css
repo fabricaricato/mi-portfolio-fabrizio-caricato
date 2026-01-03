@@ -167,7 +167,7 @@ nav a:hover {
   margin-top: 25px;
 }
 
-.social-icons i {
+.social-icons a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,9 +179,10 @@ nav a:hover {
   font-size: 1.5rem;
   transition: var(--transition);
   cursor: pointer;
+  text-decoration: none;
 }
 
-.social-icons i:hover {
+.social-icons a:hover {
   background-color: var(--accent-color);
   color: white;
   transform: translateY(-5px);
