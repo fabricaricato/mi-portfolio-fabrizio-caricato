@@ -1,14 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <title>mi-portfolio-fabrizio-caricato</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Fabrizio Caricato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <aside>
+      <nav>
+        <div class="profile-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGxwl4fhem6m2urbLPsROL7UHP2tjF4CowszALXe5IwDIMG7C2VdCqSyLCsNi4mrqWuKJgVE215SQCpX3TOTQSUgwhOnN_kBr2FB6omLvWww&s=10" alt="profile-pic" width="30" />
+          <p>prueba</p>
+        </div>
+          <ul>
+            <li><a href="#section-home">Inicio</a></li>
+            <li><a href="#section-about-me">Sobre mí</a></li>
+            <li><a href="#section-education">Educación</a></li>
+            <li><a href="#section-skills">Habilidades</a></li>
+            <li><a href="#section-projects">Proyectos</a></li>
+            <li><a href="#section-contacts">Contactos</a></li>
+          </ul>
+      </nav>
+    </aside>
+  </header>
+
+  <main>
+    <section id="section-home" class="section-home">
+      <h1 class="name-title">Fabrizio Caricato</h1>
+    </section>
+
+    <section id="section-about-me" class="about">
+      <h2>Sobre Fabrizio</h2>
+    </section>
+
+    <section id="section-education" class="education">
+      <h2>Educación</h2>
+      </section>
+
+    <section id="section-skills" class="skills">
+      <h2>Habilidades</h2>
+      <div class="skills-icons">
+        <i class="devicon-python-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-java-plain colored"></i>
+      </div>
+    </section>
+
+    <section id="section-projects" class="projects">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+            
+        <div class="card">
+          <h3>Chat-UI</h3>
+          <p>Simple interfaz de un chat funcional entre dos personas.</p>
+          <strong>Tecnologías: </strong>HTML, CSS y JavaScript
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Carteleria digital "El Re Pollo"</h3>
+          <p>Carteleria de precios intuitiva</p>
+            <strong>Tecnologías: </strong>React
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="section-contacts" class="contacts">
+      <h2>Contacto</h2>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/fabrizio" target="_blank" rel="noopener noreferrer">linkedin.com/in/fabrizio</a></p>
+      <p>GitHub: <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">github.com/tuusuario</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+      &copy; 2025 Fabrizio Caricato. Todos los derechos reservados.
+  </footer>
+</body>
 </html>

@@ -1,0 +1,10 @@
+:root{
+  --background-color-home: #4a4a4a;
+  --background-color-website: #2e2e2e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
