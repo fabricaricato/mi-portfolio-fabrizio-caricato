@@ -28,6 +28,7 @@ nav {
 }
 
 main, footer{
+  min-height: 100vh;
   background-color: var(--background-color-website);
 }
 
@@ -49,7 +50,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: var(--background-color-home);
 }
 
@@ -59,8 +60,6 @@ ul {
   justify-content: center; 
   align-items: center;     
   text-align: center;      
-  height: 100vh;           
-  width: 100%;
 }
 
 .section-home h1 {
