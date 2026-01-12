@@ -1,6 +1,7 @@
 :root{
-  --background-color-home: #4a4a4a;
+  --background-color-home: #383838;
   --background-color-website: #2e2e2e;
+  --text-color: #acacac;
 }
 
 * {
@@ -8,25 +9,21 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: var(--text-color);
 }
 
-a{
-  color: black;
-}
+/* --- SECCIÓN HEADER --- */
 
 nav {
+  position: fixed; 
+  top: 0;         
+  left: 0;   
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px;
-  background-color: var(--background-color-home);
-}
-
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--background-color-home);
 }
 
@@ -44,4 +41,35 @@ ul {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+/* --- SECCIÓN HOME --- */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color-home);
+}
+
+.section-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
+  height: 100vh;           
+  width: 100%;
+}
+
+.section-home h1 {
+  font-size: 48px;      
+  line-height: 1.2;      
+  margin-bottom: 20px;   
+}
+
+.section-home p {
+  font-size: 24px;     
+  color: #27e6ec;       
 }
