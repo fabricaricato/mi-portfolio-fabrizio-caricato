@@ -183,6 +183,49 @@ ul li a:hover {
   color: var(--accent-cyan);
 }
 
+.about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 100px;
+  max-width: 50%;
+}
+
+.about-me-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-me-title h4{
+  color: var(--accent-cyan);
+}
+
+.general-description {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.general-description p {
+  margin-right: 40px;
+}
+
+.general-description p{
+  text-align: justify;
+  color: var(--text-muted);
+}
+
+.carrousel img {
+  width: 400px;
+}
+
 /* --- KEYFRAMES --- */
 
 @keyframes smoothEntry {
