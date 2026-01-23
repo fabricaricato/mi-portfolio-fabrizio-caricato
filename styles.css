@@ -121,6 +121,7 @@ ul li a:hover {
 /* --- HOME SECTION --- */
 
 .home {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,29 +194,33 @@ ul li a:hover {
   gap: 5px;               
 }
 
-.anchor-about-me a {
+.anchor-about-me a, .anchor-projects a {
   color: var(--text-muted);
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
-.anchor-about-me i {
+.anchor-about-me i, .anchor-projects i{
   color: var(--text-muted);
   transition: color 0.3s ease;
 }
 
 .anchor-about-me:hover a,
-.anchor-about-me:hover i {
+.anchor-about-me:hover i, 
+.anchor-projects:hover a,
+.anchor-projects:hover i {
   color: var(--accent-cyan);
 }
 
 /* --- ABOUT ME SECTION --- */
 
 .about-me {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .personal-presentation {
@@ -226,13 +231,13 @@ ul li a:hover {
   max-width: 50%;
 }
 
-.about-me-title {
+.about-me-title, .projects-title {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.about-me-title h4 {
+.about-me-title h4, .projects-title h4 {
   color: var(--accent-cyan);
 }
 
@@ -254,6 +259,19 @@ ul li a:hover {
   width: 300px;
   height: 300px;
 }
+
+.anchor-projects {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- PROJECTS SECTION --- */
 
 /* --- KEYFRAMES --- */
 
@@ -278,10 +296,10 @@ ul li a:hover {
 
 @keyframes rebound {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
+  40% { transform: translateY(-6px); }
   60% { transform: translateY(-5px); }  
 }
 
-.anchor-about-me i {
+.anchor-about-me i, .anchor-projects i {
   animation: rebound 2s infinite;
 }
