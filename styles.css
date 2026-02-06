@@ -35,30 +35,6 @@ html {
   margin: 0 auto;
 }
 
-/* --- TITLES --- */
-
-.about-me-title, .education-title {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.education-title {
-  margin-left: 21px;
-}
-
-.about-me-title h4, .education-title h4 {
-  color: var(--accent-cyan);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.about-me-title h2, .education-title h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
 /* --- HEADER SECTION --- */
 
 nav {
@@ -213,35 +189,6 @@ ul li a:hover {
   cursor: pointer;
 }
 
-.anchor-about-me {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  gap: 5px;               
-}
-
-.anchor-about-me a, .anchor-education a {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-.anchor-about-me i, .anchor-education i{
-  color: var(--text-muted);
-  transition: color 0.3s ease;
-}
-
-.anchor-about-me:hover a,
-.anchor-about-me:hover i, 
-.anchor-education:hover a,
-.anchor-education:hover i {
-  color: var(--accent-cyan);
-}
-
 /* --- ABOUT ME SECTION --- */
 
 .about-me {
@@ -297,24 +244,9 @@ ul li a:hover {
   cursor: pointer;
 }
 
-.anchor-education {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-}
-
-.anchor-education:hover i, .anchor-education:hover a {
-  color: var(--accent-cyan);
-}
-
 /* --- EDUCATION SECTION  --- */
 .education {
+  position: relative;
   padding: 50px 0;
   min-height: 100vh;
   display: flex;
@@ -394,6 +326,53 @@ ul li a:hover {
   margin-bottom: 10px;
 }
 
+/* --- SKILLS SECTION --- */
+
+.skills {
+  position: relative;
+  padding: 50px 0 100px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  background-color: var(--bg-home);
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.skill-card i {
+  font-size: 3rem;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 /* --- KEYFRAMES --- */
 
 @keyframes smoothEntry {
@@ -421,6 +400,68 @@ ul li a:hover {
   60% { transform: translateY(-5px); }  
 }
 
-.anchor-about-me i, .anchor-education i {
+.anchor-about-me i, .anchor-education i, .anchor-skills i {
   animation: rebound 2s infinite;
+}
+
+/* --- TITLES --- */
+
+.about-me-title, .education-title, .skills-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.education-title, .skills-title {
+  margin-left: 21px;
+}
+
+.skills-title {
+  margin-bottom: 20px;
+}
+
+.about-me-title h4, .education-title h4, .skills-title h4 {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-me-title h2, .education-title h2, .skills-title h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/* --- ANCHORS --- */
+
+.anchor-about-me, .anchor-education,.anchor-skills {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.anchor-about-me a, .anchor-education a, .anchor-skills a {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.anchor-about-me i, .anchor-education i, .anchor-skills i {
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.anchor-about-me:hover a,
+.anchor-about-me:hover i, 
+.anchor-education:hover a,
+.anchor-education:hover i,
+.anchor-skills:hover a,
+.anchor-skills:hover i {
+  color: var(--accent-cyan);
 }
