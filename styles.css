@@ -614,7 +614,7 @@ ul li a:hover {
 
 .contact-box:hover {
   border-color: var(--accent-cyan);
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
 }
 
 .contact-box h2 {
@@ -667,6 +667,11 @@ ul li a:hover {
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
   transform: translateY(-3px);
+}
+
+.btn-secondary:hover .fa-linkedin {
+  color: var(--accent-cyan);
+  transition: all 0.3s ease;
 }
 
 /* --- TITLES --- */
@@ -774,6 +779,9 @@ footer p:hover {
   font-size: 20px;
 }
 
+.fa-linkedin {
+  transition: all 0.3s ease;
+}
 /* --- KEYFRAMES --- */
 
 @keyframes smoothEntry {
