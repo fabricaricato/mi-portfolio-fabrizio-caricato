@@ -298,20 +298,6 @@
     <p>&copy; 2026 Fabrizio Caricato. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script for hide anchors while scrolling -->
-  <script>
-    const elementos = document.querySelectorAll('.anchor');
-    let isScrolling;
-
-    window.addEventListener('scroll', () => {
-      elementos.forEach(i => i.classList.add('hide'));
-      window.clearTimeout(isScrolling);
-
-      isScrolling = setTimeout(() => {
-        elementos.forEach(el => el.classList.remove('hide'));
-      }, 200);
-    });
-  </script>
+  <script src="./script.js"></script>
 </body>
-
 </html>
