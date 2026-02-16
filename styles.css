@@ -7,6 +7,7 @@
   --accent-cyan: #27e6ec;
   --accent-yellow: #ffff82;
   --accent-blue: #1379c2;
+  --accent-purpe: #fc28e09a;
 
   /* secondary texts */
   --text-main: #ffffff;
@@ -168,6 +169,10 @@ ul li a:hover {
 
 .name {
   color: var(--accent-yellow);
+}
+
+.clasp {
+  color: var(--accent-purpe);
 }
 
 .home-section p {
